@@ -1,6 +1,6 @@
 require 'erb'
 
-x = 42
+x = 24
 template = ERB.new "The value of x is: <%= x %>"
 template2 = ERB.new "The value of x + 2 is: <%= x + 2 %>"
 template3 = ERB.new "The value of x * 2 is: <%= x * 2 %>"

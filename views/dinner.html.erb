@@ -1,0 +1,27 @@
+<h1>Mum's Dinner Party</h1>
+
+<% attendees = ["Kumar", "Cynthia", "Priya", "Zanie", "Arthur", "Leong"] %>
+
+<% food = {awesome: ["Pasta salad", "Fruid salad", "Chicken"], alright: ["Ice cream cake", "Brownie"], yuk: ["Durian!"]} %>
+
+<h3> Dinner Attendees </h3>
+	<ul>
+		<% attendees.each do |x| %>
+		<li><%= x %></li>
+		<% end %>
+	</ul>
+
+<h3> Meals & Ratings </h3>
+	<ul>
+		<% food.each do |x, y| %>
+		<li><%= x.capitalize %></li>
+			<ul>
+				<% y.each do |z| %>
+				<li><%= z %></li>
+				<% end %>
+			</ul>
+		<% end %>
+	</ul>
+
+
+
